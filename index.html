@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Simple Donut Clicker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header-container">
+    <h1>Donut Clicker<span class="exclamationMark">!</span></h1>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">COMPANY</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="main-flex">
+    <div class="giant-donut-container">
+      <img class="donut-image" src="images/donut_PNG97463.png"  onclick="addToScore()">
+    </div>
+    <div>
+      <div class="main-container">
+        <div class="stats-column">
+          <div class="score-count"><p>Donuts Made: <span id="donutCounter">0</span></p></div>
+        </div>
+        <div class="upgrades-column">
+          <div class="upgrades-container">
+            <div class="autoClick-div"><button id="autoClick-button" onclick="buyCursor()">
+              <img class="click-icon" src="images/849287.png" alt="">
+              Auto Click [<span id="clickCost">100</span>] -- <span id="clicks">0</span>
+            </button></div>
+            <div class="clickBtn-div"><button class="click-button" onclick="addToScore()">Click to make a Donut</button></div>
+            <div class="reset-div"><button class="reset-Btn" onclick="reset()">Reset</button></div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+<script src="script.js"></script>
+</html>
